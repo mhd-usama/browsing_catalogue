@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>PeoplePerHour.com - Hire Freelancers Online & Find Freelance Work</title>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">
+            <img src="logo-text.png" alt="Website Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <div class="search-box">
+                        <div class="search-dropdown">
+                            <i class="fa fa-search search-icon" style="font-size:15px; color: lightblue;"></i>
+                            <input type="text" class="search-input" placeholder="Search" style="color: lightblue;">
+                            <div class="dropdown-content">
+                                <a href="#">Option 1</a>
+                                <a href="#">Option 2</a>
+                                <a href="#">Option 3</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </li>
+                <li><a href="#">HOW IT WORKS?</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">SIGN UP</a></li>
+                <li><a href="#" class="freelancer">FREELANCER?</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
