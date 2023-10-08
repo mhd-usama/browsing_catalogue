@@ -226,6 +226,21 @@ p {
     justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Change flex-direction to stack sections vertically */
+    }
+
+    .hero-right {
+        order: -1; /* Move hero-right to the top */
+        height: auto; /* Remove fixed height */
+    }
+
+    .hero-left {
+        padding-right: 0; /* Remove right padding */
+    }
+}
+
 .search-bar-2 {
     background-color:white;
     margin: 3px 0;
@@ -272,4 +287,102 @@ p {
     line-height: 24px; /* Increase the line-height to vertically center text */
     font-size: 18px;
 }
+
+.menu-2 {
+    list-style: none;
+    margin: 0;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .submenu a:hover {
+    color: blue;
+  }
+  .menu-2 li {
+    display: inline-block;
+    position: relative;
+  }
+  .menu-2 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    display: flex;
+    position: relative;
+  }
+  .menu-2 li:hover .submenu,
+  .submenu:hover {
+    display: block;
+  }
+  .submenu {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 113px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+  }
+
+  .submenu table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+  }
+  .submenu td {
+    border: none;
+    text-align: left;
+    padding: 5px;
+    min-width: 200px;
+  }
+
+.keywords {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.keywords-header {
+    flex: 1;
+}
+
+.keywords-list {
+    flex: 5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.keywords-header p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px; /* Add spacing below the "Popular skills:" text */
+}
+
+.keyword-box {
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 0px; /* Add spacing between keywords vertically */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #888; /* Dark grey font color */
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-decoration: none;
+    font-size: 14px; /* Remove underline style */
+}
+
+/* Remove underline on hover as well */
+.keyword-box:hover {
+    text-decoration: none;
+}
+
 
